@@ -1,5 +1,7 @@
 # LenticularCard
 
+This is SwiftUI app.
+
 ## I wanted to express like this
 ![real-lenticular-card](https://user-images.githubusercontent.com/67716751/161010815-75325b20-692c-41b0-be87-89d6c2ab2fd4.GIF)
 
@@ -10,3 +12,8 @@
 ### How to play
 It works with `CMMotionManager` and its `CMDeviceMotion`.
 so just your device rolls.
+
+## Reference
+
+I tried to reproduce a rare card whose design changes depending on the angle
+[【SwiftUI】角度でデザインが変わるレアカードを再現してみた](https://dev.classmethod.jp/articles/swiftui-lenticular-card/)
