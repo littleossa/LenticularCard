@@ -6,16 +6,40 @@
 //
 
 import SwiftUI
+import CoreMotion
 
 struct ContentView: View {
+    
+    @ObservedObject var lenticulationManager = LenticulationManager()
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            Image("back")
+                .resizable()
+                .ignoresSafeArea()
+            Image("middle")
+                .resizable()
+                .ignoresSafeArea()
+                .opacity(lenticulationManager.middleImageOpacity)
+            Image("front")
+                .resizable()
+                .ignoresSafeArea()
+                .opacity(lenticulationManager.frontImageOpacitry)
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewInterfaceOrientation(.landscapeLeft)
     }
+}
+
+import Foundation
+
+class MotionManager {
+    
+    
+    
 }
