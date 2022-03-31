@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import CoreMotion
 
 struct ContentView: View {
     
@@ -34,12 +33,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
             .previewInterfaceOrientation(.landscapeLeft)
     }
-}
-
-import Foundation
-
-class MotionManager {
-    
-    
-    
 }
