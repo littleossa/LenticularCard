@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var lenticulationManager = LenticulationManager()
+    @StateObject var lenticulationManager = LenticulationManager()
 
     var body: some View {
         ZStack {
