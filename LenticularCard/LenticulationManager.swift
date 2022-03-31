@@ -52,7 +52,6 @@ class LenticulationManager: ObservableObject {
             update(middleImageOpacity: 1, andFrontImageOpacity: frontOpacity)
         case .backward(let degree):
             let middleOpacity = degree >= baseDegrees ?  0 : (baseDegrees - degree) / baseDegrees
-            print(middleOpacity)
             update(middleImageOpacity: middleOpacity, andFrontImageOpacity: 0)
         }
     }
